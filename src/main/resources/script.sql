@@ -1,5 +1,6 @@
 create database boardserver;
 
+## create user table
 create table user
 (
     id         int auto_increment
@@ -12,3 +13,15 @@ create table user
     isWithDraw tinyint(1)   null,
     status     varchar(45)  null
 );
+
+## create category table
+create table category
+(
+    id                int auto_increment
+        primary key,
+    name              varchar(45) null,
+    sortStatus        varchar(45) null,
+    searchCount       int         null,
+    pagingStartOffset int         null
+);
+
