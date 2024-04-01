@@ -30,7 +30,7 @@ public class PostServiceImpl implements PostService {
     @Autowired
     private TagMapper tagMapper;
 
-    @CacheEvict(value = "getPosts", allEntries = true)
+    @CacheEvict(value="getProducts", allEntries = true)
     @Override
     public void register(String id, PostDTO postDTO) {
         UserDTO memberInfo = userProfileMapper.getUserProfile(id);
@@ -39,16 +39,9 @@ public class PostServiceImpl implements PostService {
 
         if (memberInfo != null) {
             postMapper.register(postDTO);
-            Integer postId = postDTO.getId();
-            for(int i=0; i<postDTO.getTagDTOList().size(); i++) {
-                TagDTO tagDTO = postDTO.getTagDTOList().get(i);
-                tagMapper.register(tagDTO);
-                Integer tagId = tagDTO.getId();
-                tagMapper.createPostTag(tagId, postId);
-            }
         } else {
-            log.error("register Error! {}", postDTO);
-            throw new RuntimeException("register Error! 게시글 등록 메서드를 확인해 주세요 " + postDTO);
+            log.error("register ERROR! {}", postDTO);
+            throw new RuntimeException("register ERROR! 상품 등록 메서드를 확인해주세요\n" + "Params : " + postDTO);
         }
     }
 

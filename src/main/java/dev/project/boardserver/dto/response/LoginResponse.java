@@ -18,7 +18,7 @@ public class LoginResponse {
     private LoginStatus result;
     private UserDTO userDto;
 
-    private static final LoginResponse FAIL = new LoginResponse(LoginStatus.FAIL, null);
+    private static final LoginResponse FAIL = new LoginResponse(LoginStatus.FAIL);
 
     public static LoginResponse success(UserDTO userDto) {
         return new LoginResponse(LoginStatus.SUCCESS, userDto);
