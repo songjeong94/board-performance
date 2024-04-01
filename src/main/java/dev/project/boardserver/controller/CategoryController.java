@@ -2,6 +2,7 @@ package dev.project.boardserver.controller;
 
 import dev.project.boardserver.aop.LoginCheck;
 import dev.project.boardserver.dto.CategoryDTO;
+import dev.project.boardserver.dto.SortStatus;
 import dev.project.boardserver.service.impl.CategoryServiceImpl;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -30,7 +31,7 @@ public class CategoryController {
     public void updateCategories(String accountId,
                                  @PathVariable(name = "categoryId") int categoryId,
                                  @RequestBody CategoryRequest categoryRequest) {
-        CategoryDTO categoryDTO = new CategoryDTO(categoryId, categoryRequest.getName(), CategoryDTO.SortStatus.NEWEST, 10, 1);
+        CategoryDTO categoryDTO = new CategoryDTO(categoryId, categoryRequest.getName(), SortStatus.NEWEST, 10, 1);
         categoryService.update(categoryDTO);
     }
 

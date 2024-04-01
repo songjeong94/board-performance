@@ -1,6 +1,7 @@
 package dev.project.boardserver.dto.request;
 
 import dev.project.boardserver.dto.CategoryDTO;
+import dev.project.boardserver.dto.SortStatus;
 import lombok.*;
 
 @Builder
@@ -16,6 +17,6 @@ public class PostSearchRequest {
     private int views;
     private int categoryId;
     private int userId;
-    private CategoryDTO.SortStatus sortStatus;
+    private SortStatus sortStatus;
 
 }

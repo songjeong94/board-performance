@@ -22,5 +22,4 @@ public class PostDTO {
     private int userId;
     private int fileId;
     private Date updateTime;
-    private List<TagDTO> tagDTOList;
 }

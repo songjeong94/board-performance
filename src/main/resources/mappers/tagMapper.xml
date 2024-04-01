@@ -20,9 +20,4 @@
         DELETE FROM tag WHERE id = #{tagId}
     </delete>
 
-    <insert id="createPostTag" parameterType="dev.project.boardserver.dto.TagDTO">
-        INSERT INTO posttag (tagId, postId)
-        VALUES (#{tagId}, #{postID})
-    </insert>
-
 </mapper>
