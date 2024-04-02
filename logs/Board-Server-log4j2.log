@@ -1,125 +1,1635 @@
-[36m2024/04/01 14:43:43,358[m [32m[INFO ][m [org.springframework.boot.StartupInfoLogger] [33m[main][m- Started BoardserverApplication in 1.574 seconds (process running for 1.92)
- -[36m2024/04/01 14:43:43,362[m [34m[DEBUG][m [org.springframework.boot.availability.ApplicationAvailabilityBean] [33m[main][m- Application availability state LivenessState changed to CORRECT
- -[36m2024/04/01 14:43:43,363[m [34m[DEBUG][m [org.springframework.boot.availability.ApplicationAvailabilityBean] [33m[main][m- Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
- -[36m2024/04/01 14:44:23,543[m [32m[INFO ][m [org.apache.juli.logging.DirectJDKLog] [33m[http-nio-8080-exec-2][m- Initializing Spring DispatcherServlet 'dispatcherServlet'
- -[36m2024/04/01 14:44:23,544[m [32m[INFO ][m [org.springframework.web.servlet.FrameworkServlet] [33m[http-nio-8080-exec-2][m- Initializing Servlet 'dispatcherServlet'
- -[36m2024/04/01 14:44:23,544[m [34m[DEBUG][m [org.springframework.web.servlet.DispatcherServlet] [33m[http-nio-8080-exec-2][m- Detected StandardServletMultipartResolver
- -[36m2024/04/01 14:44:23,544[m [34m[DEBUG][m [org.springframework.web.servlet.DispatcherServlet] [33m[http-nio-8080-exec-2][m- Detected AcceptHeaderLocaleResolver
- -[36m2024/04/01 14:44:23,544[m [34m[DEBUG][m [org.springframework.web.servlet.DispatcherServlet] [33m[http-nio-8080-exec-2][m- Detected FixedThemeResolver
- -[36m2024/04/01 14:44:23,544[m [34m[DEBUG][m [org.springframework.web.servlet.DispatcherServlet] [33m[http-nio-8080-exec-2][m- Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3496e97
- -[36m2024/04/01 14:44:23,545[m [34m[DEBUG][m [org.springframework.web.servlet.DispatcherServlet] [33m[http-nio-8080-exec-2][m- Detected org.springframework.web.servlet.support.SessionFlashMapManager@3bf8bf3b
- -[36m2024/04/01 14:44:23,545[m [34m[DEBUG][m [org.springframework.web.servlet.FrameworkServlet] [33m[http-nio-8080-exec-2][m- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
- -[36m2024/04/01 14:44:23,545[m [32m[INFO ][m [org.springframework.web.servlet.FrameworkServlet] [33m[http-nio-8080-exec-2][m- Completed initialization in 1 ms
- -[36m2024/04/01 14:44:23,549[m [34m[DEBUG][m [org.springframework.core.log.LogFormatUtils] [33m[http-nio-8080-exec-2][m- POST "/users/sign-in", parameters={}
- -[36m2024/04/01 14:44:23,555[m [34m[DEBUG][m [org.springframework.web.servlet.handler.AbstractHandlerMapping] [33m[http-nio-8080-exec-2][m- Mapped to dev.project.boardserver.controller.UserController#login(UserLoginRequest, HttpSession)
- -[36m2024/04/01 14:44:23,589[m [34m[DEBUG][m [org.springframework.core.log.LogFormatUtils] [33m[http-nio-8080-exec-2][m- Read "application/json;charset=UTF-8" to [dev.project.boardserver.dto.request.UserLoginRequest@e54d218]
- -[36m2024/04/01 14:44:23,610[m [34m[DEBUG][m [org.springframework.jdbc.datasource.DataSourceUtils] [33m[http-nio-8080-exec-2][m- Fetching JDBC Connection from DataSource
- -[36m2024/04/01 14:44:23,612[m [32m[INFO ][m [com.zaxxer.hikari.HikariDataSource] [33m[http-nio-8080-exec-2][m- HikariPool-1 - Starting...
- -[36m2024/04/01 14:44:23,758[m [32m[INFO ][m [com.zaxxer.hikari.pool.HikariPool] [33m[http-nio-8080-exec-2][m- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6617567a
- -[36m2024/04/01 14:44:23,758[m [32m[INFO ][m [com.zaxxer.hikari.HikariDataSource] [33m[http-nio-8080-exec-2][m- HikariPool-1 - Start completed.
- -[36m2024/04/01 14:44:23,787[m [34m[DEBUG][m [org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor] [33m[http-nio-8080-exec-2][m- Using 'application/json', given [*/*] and supported [application/json, application/*+json]
- -[36m2024/04/01 14:44:23,787[m [34m[DEBUG][m [org.springframework.core.log.LogFormatUtils] [33m[http-nio-8080-exec-2][m- Writing [200 OK]
- -[36m2024/04/01 14:44:23,792[m [34m[DEBUG][m [org.springframework.web.servlet.FrameworkServlet] [33m[http-nio-8080-exec-2][m- Completed 200 OK
- -[36m2024/04/01 14:44:31,370[m [34m[DEBUG][m [org.springframework.core.log.LogFormatUtils] [33m[http-nio-8080-exec-3][m- PATCH "/users/password", parameters={}
- -[36m2024/04/01 14:44:31,371[m [34m[DEBUG][m [org.springframework.web.servlet.handler.AbstractHandlerMapping] [33m[http-nio-8080-exec-3][m- Mapped to dev.project.boardserver.controller.UserController#updateUserPassword(String, UserUpdatePasswordRequest, HttpSession)
- -[36m2024/04/01 14:44:31,381[m [34m[DEBUG][m [org.springframework.core.log.LogFormatUtils] [33m[http-nio-8080-exec-3][m- Read "application/json;charset=UTF-8" to [dev.project.boardserver.dto.request.UserUpdatePasswordRequest@40cc4358]
- -[36m2024/04/01 14:44:31,387[m [34m[DEBUG][m [org.springframework.jdbc.datasource.DataSourceUtils] [33m[http-nio-8080-exec-3][m- Fetching JDBC Connection from DataSource
- -[36m2024/04/01 14:44:31,389[m [31m[ERROR][m [dev.project.boardserver.service.impl.UserServiceImpl] [33m[http-nio-8080-exec-3][m- updatePasswrod ERROR! null
- -[36m2024/04/01 14:44:31,390[m [31m[ERROR][m [dev.project.boardserver.controller.UserController] [33m[http-nio-8080-exec-3][m- updatePassword 실패
- - java.lang.IllegalArgumentException: updatePasswrod ERROR! 비밀번호 변경 메서드를 확인해주세요
-Params : null
-	at dev.project.boardserver.service.impl.UserServiceImpl.updatePassword(UserServiceImpl.java:70) ~[main/:?]
-	at dev.project.boardserver.controller.UserController.updateUserPassword(UserController.java:88) [main/:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:102) [spring-aop-6.1.3.jar:6.1.3]
-	at dev.project.boardserver.aop.LoginCheckAspect.adminLoginCheck(LoginCheckAspect.java:50) [main/:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) [spring-aop-6.1.3.jar:6.1.3]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) [spring-aop-6.1.3.jar:6.1.3]
-	at dev.project.boardserver.controller.UserController$$SpringCGLIB$$0.updateUserPassword(<generated>) [main/:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:261) [spring-web-6.1.3.jar:6.1.3]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:189) [spring-web-6.1.3.jar:6.1.3]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) [spring-webmvc-6.1.3.jar:6.1.3]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) [spring-webmvc-6.1.3.jar:6.1.3]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) [spring-webmvc-6.1.3.jar:6.1.3]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-6.1.3.jar:6.1.3]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) [spring-webmvc-6.1.3.jar:6.1.3]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) [spring-webmvc-6.1.3.jar:6.1.3]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) [spring-webmvc-6.1.3.jar:6.1.3]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888) [spring-webmvc-6.1.3.jar:6.1.3]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) [tomcat-embed-core-10.1.18.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-10.1.18.jar:10.1.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.1.3.jar:6.1.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.1.3.jar:6.1.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.1.3.jar:6.1.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.1.3.jar:6.1.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.1.3.jar:6.1.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.1.3.jar:6.1.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-10.1.18.jar:10.1.18]
-	at java.base/java.lang.Thread.run(Thread.java:833) [?:?]
-[36m2024/04/01 14:44:31,404[m [34m[DEBUG][m [org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor] [33m[http-nio-8080-exec-3][m- Using 'application/json', given [*/*] and supported [application/json, application/*+json]
- -[36m2024/04/01 14:44:31,404[m [34m[DEBUG][m [org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor] [33m[http-nio-8080-exec-3][m- Nothing to write: null body
- -[36m2024/04/01 14:44:31,405[m [34m[DEBUG][m [org.springframework.web.servlet.FrameworkServlet] [33m[http-nio-8080-exec-3][m- Completed 400 BAD_REQUEST
- -[36m2024/04/01 14:45:39,434[m [34m[DEBUG][m [org.springframework.boot.availability.ApplicationAvailabilityBean] [33m[SpringApplicationShutdownHook][m- Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
- -[36m2024/04/01 14:45:39,434[m [34m[DEBUG][m [org.springframework.context.support.AbstractApplicationContext] [33m[SpringApplicationShutdownHook][m- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42b64ab8, started on Mon Apr 01 14:43:41 KST 2024
- -[36m2024/04/01 14:45:39,436[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[SpringApplicationShutdownHook][m- Stopping beans in phase 2147483647
- -[36m2024/04/01 14:45:39,436[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[SpringApplicationShutdownHook][m- Stopping beans in phase 2147482623
- -[36m2024/04/01 14:45:39,436[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[SpringApplicationShutdownHook][m- Bean 'webServerGracefulShutdown' completed its stop procedure
- -[36m2024/04/01 14:45:39,436[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[SpringApplicationShutdownHook][m- Stopping beans in phase 2147481599
- -[36m2024/04/01 14:45:39,439[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[SpringApplicationShutdownHook][m- Bean 'webServerStartStop' completed its stop procedure
- -[36m2024/04/01 14:45:39,439[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[SpringApplicationShutdownHook][m- Stopping beans in phase 0
- -[36m2024/04/01 14:45:39,552[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[SpringApplicationShutdownHook][m- Bean 'redisConnectionFactory' completed its stop procedure
- -[36m2024/04/01 14:45:39,552[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[SpringApplicationShutdownHook][m- Stopping beans in phase -2147483647
- -[36m2024/04/01 14:45:39,552[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[SpringApplicationShutdownHook][m- Bean 'springBootLoggingLifecycle' completed its stop procedure
- -[36m2024/04/01 14:45:39,554[m [34m[DEBUG][m [org.springframework.beans.factory.support.DisposableBeanAdapter] [33m[SpringApplicationShutdownHook][m- Custom destroy method 'shutdown' on bean with name 'lettuceClientResources' completed asynchronously
- -[36m2024/04/01 14:45:39,554[m [34m[DEBUG][m [org.springframework.jmx.export.MBeanExporter] [33m[SpringApplicationShutdownHook][m- Unregistering JMX-exposed beans on shutdown
- -[36m2024/04/01 14:45:39,554[m [34m[DEBUG][m [org.springframework.jmx.support.MBeanRegistrationSupport] [33m[SpringApplicationShutdownHook][m- Unregistering JMX-exposed beans
- -[36m2024/04/01 14:45:39,554[m [34m[DEBUG][m [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [33m[SpringApplicationShutdownHook][m- Shutting down ExecutorService 'applicationTaskExecutor'
- -[36m2024/04/01 14:45:39,555[m [32m[INFO ][m [com.zaxxer.hikari.HikariDataSource] [33m[SpringApplicationShutdownHook][m- HikariPool-1 - Shutdown initiated...
- -[36m2024/04/01 14:45:39,559[m [32m[INFO ][m [com.zaxxer.hikari.HikariDataSource] [33m[SpringApplicationShutdownHook][m- HikariPool-1 - Shutdown completed.
+[36m2024/04/02 20:58:32,920[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+ -[36m2024/04/02 20:58:32,924[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'stringHttpMessageConverter'
+ -[36m2024/04/02 20:58:32,924[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+ -[36m2024/04/02 20:58:32,925[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
+ -[36m2024/04/02 20:58:32,926[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
+ -[36m2024/04/02 20:58:32,927[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+ -[36m2024/04/02 20:58:32,927[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'objectMapper'
+ -[36m2024/04/02 20:58:32,933[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'resourceHandlerMapping'
+ -[36m2024/04/02 20:58:32,934[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+ -[36m2024/04/02 20:58:32,934[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+ -[36m2024/04/02 20:58:32,934[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+ -[36m2024/04/02 20:58:32,938[m [34m[DEBUG][m [org.springframework.web.servlet.handler.SimpleUrlHandlerMapping] [33m[main][m- Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ -[36m2024/04/02 20:58:32,940[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+ -[36m2024/04/02 20:58:32,940[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+ -[36m2024/04/02 20:58:32,940[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+ -[36m2024/04/02 20:58:32,940[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+ -[36m2024/04/02 20:58:32,940[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+ -[36m2024/04/02 20:58:32,943[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'sortResolver'
+ -[36m2024/04/02 20:58:32,944[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'sortCustomizer'
+ -[36m2024/04/02 20:58:32,944[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration'
+ -[36m2024/04/02 20:58:32,944[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.data.web-org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties'
+ -[36m2024/04/02 20:58:32,945[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration' via constructor to bean named 'spring.data.web-org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties'
+ -[36m2024/04/02 20:58:32,947[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'pageableResolver'
+ -[36m2024/04/02 20:58:32,948[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'pageableCustomizer'
+ -[36m2024/04/02 20:58:32,950[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'applicationTaskExecutor'
+ -[36m2024/04/02 20:58:32,950[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+ -[36m2024/04/02 20:58:32,952[m [34m[DEBUG][m [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [33m[main][m- Initializing ExecutorService 'applicationTaskExecutor'
+ -[36m2024/04/02 20:58:32,959[m [34m[DEBUG][m [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] [33m[main][m- ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ -[36m2024/04/02 20:58:32,973[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'handlerFunctionAdapter'
+ -[36m2024/04/02 20:58:32,974[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+ -[36m2024/04/02 20:58:32,974[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+ -[36m2024/04/02 20:58:32,975[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+ -[36m2024/04/02 20:58:32,976[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+ -[36m2024/04/02 20:58:32,976[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+ -[36m2024/04/02 20:58:32,976[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'handlerExceptionResolver'
+ -[36m2024/04/02 20:58:32,976[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
+ -[36m2024/04/02 20:58:32,979[m [34m[DEBUG][m [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [33m[main][m- ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+ -[36m2024/04/02 20:58:32,980[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'mvcViewResolver'
+ -[36m2024/04/02 20:58:32,980[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+ -[36m2024/04/02 20:58:32,981[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'viewNameTranslator'
+ -[36m2024/04/02 20:58:32,982[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'defaultViewResolver'
+ -[36m2024/04/02 20:58:32,987[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'viewResolver'
+ -[36m2024/04/02 20:58:32,987[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2c22a348'
+ -[36m2024/04/02 20:58:32,987[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'viewResolver'
+ -[36m2024/04/02 20:58:32,988[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.mybatis.spring.boot.autoconfigure.MybatisLanguageDriverAutoConfiguration'
+ -[36m2024/04/02 20:58:32,988[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
+ -[36m2024/04/02 20:58:32,989[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
+ -[36m2024/04/02 20:58:32,989[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration'
+ -[36m2024/04/02 20:58:32,989[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration'
+ -[36m2024/04/02 20:58:32,989[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+ -[36m2024/04/02 20:58:32,993[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration'
+ -[36m2024/04/02 20:58:32,993[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+ -[36m2024/04/02 20:58:32,994[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' via constructor to bean named 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties'
+ -[36m2024/04/02 20:58:32,994[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'mbeanExporter'
+ -[36m2024/04/02 20:58:32,995[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'objectNamingStrategy'
+ -[36m2024/04/02 20:58:32,996[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'objectNamingStrategy'
+ -[36m2024/04/02 20:58:32,996[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'mbeanExporter' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@2c22a348'
+ -[36m2024/04/02 20:58:32,999[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'mbeanServer'
+ -[36m2024/04/02 20:58:32,999[m [34m[DEBUG][m [org.springframework.jmx.support.JmxUtils] [33m[main][m- Found MBeanServer: com.sun.jmx.mbeanserver.JmxMBeanServer@606d8acf
+ -[36m2024/04/02 20:58:33,004[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.admin.SpringApplicationAdminJmxAutoConfiguration'
+ -[36m2024/04/02 20:58:33,004[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'springApplicationAdminRegistrar'
+ -[36m2024/04/02 20:58:33,004[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'springApplicationAdminRegistrar' via factory method to bean named 'environment'
+ -[36m2024/04/02 20:58:33,005[m [34m[DEBUG][m [org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar] [33m[main][m- Application Admin MBean registered with name 'org.springframework.boot:type=Admin,name=SpringApplication'
+ -[36m2024/04/02 20:58:33,006[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$AspectJAutoProxyingConfiguration$CglibAutoProxyConfiguration'
+ -[36m2024/04/02 20:58:33,006[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$AspectJAutoProxyingConfiguration'
+ -[36m2024/04/02 20:58:33,006[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration'
+ -[36m2024/04/02 20:58:33,007[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration'
+ -[36m2024/04/02 20:58:33,007[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'applicationAvailability'
+ -[36m2024/04/02 20:58:33,008[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration'
+ -[36m2024/04/02 20:58:33,008[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.data.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties'
+ -[36m2024/04/02 20:58:33,010[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'redisConnectionDetails'
+ -[36m2024/04/02 20:58:33,010[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration'
+ -[36m2024/04/02 20:58:33,014[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'redisConnectionDetails' via factory method to bean named 'spring.data.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties'
+ -[36m2024/04/02 20:58:33,015[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' via constructor to bean named 'spring.data.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties'
+ -[36m2024/04/02 20:58:33,015[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' via constructor to bean named 'redisConnectionDetails'
+ -[36m2024/04/02 20:58:33,017[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'lettuceClientResources'
+ -[36m2024/04/02 20:58:33,019[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'redisTemplate'
+ -[36m2024/04/02 20:58:33,019[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'redisTemplate' via factory method to bean named 'redisConnectionFactory'
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class [B as writing converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.String as reading converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Number to class [B as writing converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Number as reading converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Enum to class [B as writing converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Enum as reading converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Boolean to class [B as writing converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Boolean as reading converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class [B as writing converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.util.Date as reading converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.UUID to class [B as writing converter
+ -[36m2024/04/02 20:58:33,035[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.util.UUID as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDate to class [B as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalTime as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZonedDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.ZonedDateTime as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class [B as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZoneId to class [B as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.ZoneId as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Period to class [B as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Period as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Duration to class [B as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Duration as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.OffsetDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.OffsetDateTime as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.OffsetTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.OffsetTime as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDate to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalTime as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalTime to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,036[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,037[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,037[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZoneId to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,037[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.ZoneId as reading converter
+ -[36m2024/04/02 20:58:33,037[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Duration to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,037[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Duration as reading converter
+ -[36m2024/04/02 20:58:33,037[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Period to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,037[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Period as reading converter
+ -[36m2024/04/02 20:58:33,037[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,037[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,037[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class [B as writing converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.String as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Number to class [B as writing converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Number as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Enum to class [B as writing converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Enum as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Boolean to class [B as writing converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Boolean as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class [B as writing converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.util.Date as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.UUID to class [B as writing converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.util.UUID as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDate to class [B as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalTime as reading converter
+ -[36m2024/04/02 20:58:33,043[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZonedDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.ZonedDateTime as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class [B as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZoneId to class [B as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.ZoneId as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Period to class [B as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Period as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Duration to class [B as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Duration as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.OffsetDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.OffsetDateTime as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.OffsetTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.OffsetTime as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDate to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalTime as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalTime to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZoneId to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.ZoneId as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Duration to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Duration as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Period to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Period as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,044[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,045[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class [B as writing converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.String as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Number to class [B as writing converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Number as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Enum to class [B as writing converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Enum as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Boolean to class [B as writing converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Boolean as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class [B as writing converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.util.Date as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.UUID to class [B as writing converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.util.UUID as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDate to class [B as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalTime as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZonedDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.ZonedDateTime as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class [B as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZoneId to class [B as reading converter
+ -[36m2024/04/02 20:58:33,050[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.ZoneId as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Period to class [B as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Period as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Duration to class [B as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Duration as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.OffsetDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.OffsetDateTime as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.OffsetTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.OffsetTime as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDate to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalTime as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalTime to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZoneId to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.ZoneId as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Duration to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Duration as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Period to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Period as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,051[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,052[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class [B as writing converter
+ -[36m2024/04/02 20:58:33,052[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.String as reading converter
+ -[36m2024/04/02 20:58:33,052[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Number to class [B as writing converter
+ -[36m2024/04/02 20:58:33,052[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Number as reading converter
+ -[36m2024/04/02 20:58:33,052[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Enum to class [B as writing converter
+ -[36m2024/04/02 20:58:33,052[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Enum as reading converter
+ -[36m2024/04/02 20:58:33,052[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Boolean to class [B as writing converter
+ -[36m2024/04/02 20:58:33,052[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Boolean as reading converter
+ -[36m2024/04/02 20:58:33,052[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class [B as writing converter
+ -[36m2024/04/02 20:58:33,052[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.util.Date as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.UUID to class [B as writing converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.util.UUID as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDate to class [B as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalTime as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZonedDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.ZonedDateTime as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class [B as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZoneId to class [B as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.ZoneId as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Period to class [B as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Period as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Duration to class [B as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Duration as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.OffsetDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.OffsetDateTime as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.OffsetTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.OffsetTime as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDate to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalTime as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalTime to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZoneId to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.ZoneId as reading converter
+ -[36m2024/04/02 20:58:33,053[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Duration to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,054[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Duration as reading converter
+ -[36m2024/04/02 20:58:33,054[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Period to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,054[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Period as reading converter
+ -[36m2024/04/02 20:58:33,054[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,054[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,054[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,057[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class [B as writing converter
+ -[36m2024/04/02 20:58:33,057[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.String as reading converter
+ -[36m2024/04/02 20:58:33,057[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Number to class [B as writing converter
+ -[36m2024/04/02 20:58:33,057[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Number as reading converter
+ -[36m2024/04/02 20:58:33,057[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Enum to class [B as writing converter
+ -[36m2024/04/02 20:58:33,057[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Enum as reading converter
+ -[36m2024/04/02 20:58:33,057[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.Boolean to class [B as writing converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.lang.Boolean as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class [B as writing converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.util.Date as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.UUID to class [B as writing converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.util.UUID as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDate to class [B as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.LocalTime as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZonedDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.ZonedDateTime as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class [B as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZoneId to class [B as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.ZoneId as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Period to class [B as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Period as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Duration to class [B as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.Duration as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.OffsetDateTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.OffsetDateTime as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.OffsetTime to class [B as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class [B to class java.time.OffsetTime as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDate to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.LocalTime as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalTime to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.util.Date to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class java.util.Date as writing converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.LocalDateTime to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Instant to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.ZoneId to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.ZoneId as reading converter
+ -[36m2024/04/02 20:58:33,058[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Duration to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,059[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Duration as reading converter
+ -[36m2024/04/02 20:58:33,059[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.time.Period to class java.lang.String as writing converter
+ -[36m2024/04/02 20:58:33,059[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Period as reading converter
+ -[36m2024/04/02 20:58:33,059[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.LocalDate as reading converter
+ -[36m2024/04/02 20:58:33,059[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.LocalDateTime as reading converter
+ -[36m2024/04/02 20:58:33,059[m [34m[DEBUG][m [org.springframework.data.convert.CustomConversions] [33m[main][m- Adding converter from class java.lang.String to class java.time.Instant as reading converter
+ -[36m2024/04/02 20:58:33,067[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'stringRedisTemplate'
+ -[36m2024/04/02 20:58:33,067[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'stringRedisTemplate' via factory method to bean named 'redisConnectionFactory'
+ -[36m2024/04/02 20:58:33,071[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+ -[36m2024/04/02 20:58:33,071[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+ -[36m2024/04/02 20:58:33,071[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+ -[36m2024/04/02 20:58:33,073[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+ -[36m2024/04/02 20:58:33,073[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'parameterNamesModule'
+ -[36m2024/04/02 20:58:33,073[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+ -[36m2024/04/02 20:58:33,075[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'jsonMixinModule'
+ -[36m2024/04/02 20:58:33,075[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonMixinConfiguration'
+ -[36m2024/04/02 20:58:33,075[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'jsonMixinModuleEntries'
+ -[36m2024/04/02 20:58:33,075[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'jsonMixinModuleEntries' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e985ce9'
+ -[36m2024/04/02 20:58:33,076[m [34m[DEBUG][m [org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages] [33m[main][m- @EnableAutoConfiguration was declared on a class in the package 'dev.project.boardserver'. Automatic @Repository and @Entity scanning is enabled.
+ -[36m2024/04/02 20:58:33,079[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e985ce9'
+ -[36m2024/04/02 20:58:33,079[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'jsonMixinModuleEntries'
+ -[36m2024/04/02 20:58:33,079[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'jsonComponentModule'
+ -[36m2024/04/02 20:58:33,079[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+ -[36m2024/04/02 20:58:33,081[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'jacksonGeoModule'
+ -[36m2024/04/02 20:58:33,081[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration'
+ -[36m2024/04/02 20:58:33,083[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'pageModule'
+ -[36m2024/04/02 20:58:33,084[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+ -[36m2024/04/02 20:58:33,084[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+ -[36m2024/04/02 20:58:33,084[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration'
+ -[36m2024/04/02 20:58:33,085[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'platformTransactionManagerCustomizers'
+ -[36m2024/04/02 20:58:33,085[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'transactionExecutionListeners'
+ -[36m2024/04/02 20:58:33,086[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties'
+ -[36m2024/04/02 20:58:33,087[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration'
+ -[36m2024/04/02 20:58:33,087[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration'
+ -[36m2024/04/02 20:58:33,087[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'lifecycleProcessor'
+ -[36m2024/04/02 20:58:33,087[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+ -[36m2024/04/02 20:58:33,088[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'lifecycleProcessor' via factory method to bean named 'spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties'
+ -[36m2024/04/02 20:58:33,088[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration'
+ -[36m2024/04/02 20:58:33,089[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.redis.RedisReactiveAutoConfiguration'
+ -[36m2024/04/02 20:58:33,089[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
+ -[36m2024/04/02 20:58:33,089[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.data.web.config.ProjectingArgumentResolverRegistrar'
+ -[36m2024/04/02 20:58:33,089[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'offsetResolver'
+ -[36m2024/04/02 20:58:33,090[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration'
+ -[36m2024/04/02 20:58:33,091[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+ -[36m2024/04/02 20:58:33,091[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration' via constructor to bean named 'spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties'
+ -[36m2024/04/02 20:58:33,091[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration'
+ -[36m2024/04/02 20:58:33,092[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'jdbcTemplate'
+ -[36m2024/04/02 20:58:33,092[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
+ -[36m2024/04/02 20:58:33,092[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'dataSource'
+ -[36m2024/04/02 20:58:33,092[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'jdbcTemplate' via factory method to bean named 'spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties'
+ -[36m2024/04/02 20:58:33,099[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration'
+ -[36m2024/04/02 20:58:33,099[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'namedParameterJdbcTemplate'
+ -[36m2024/04/02 20:58:33,100[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'namedParameterJdbcTemplate' via factory method to bean named 'jdbcTemplate'
+ -[36m2024/04/02 20:58:33,102[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration'
+ -[36m2024/04/02 20:58:33,102[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.JdbcClientAutoConfiguration'
+ -[36m2024/04/02 20:58:33,102[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'jdbcClient'
+ -[36m2024/04/02 20:58:33,102[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'jdbcClient' via factory method to bean named 'namedParameterJdbcTemplate'
+ -[36m2024/04/02 20:58:33,103[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.netty.NettyAutoConfiguration'
+ -[36m2024/04/02 20:58:33,103[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.netty-org.springframework.boot.autoconfigure.netty.NettyProperties'
+ -[36m2024/04/02 20:58:33,103[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'org.springframework.boot.autoconfigure.netty.NettyAutoConfiguration' via constructor to bean named 'spring.netty-org.springframework.boot.autoconfigure.netty.NettyProperties'
+ -[36m2024/04/02 20:58:33,103[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.reactor.ReactorAutoConfiguration'
+ -[36m2024/04/02 20:58:33,103[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.reactor-org.springframework.boot.autoconfigure.reactor.ReactorProperties'
+ -[36m2024/04/02 20:58:33,104[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'org.springframework.boot.autoconfigure.reactor.ReactorAutoConfiguration' via constructor to bean named 'spring.reactor-org.springframework.boot.autoconfigure.reactor.ReactorProperties'
+ -[36m2024/04/02 20:58:33,104[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration'
+ -[36m2024/04/02 20:58:33,104[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$ThreadPoolTaskSchedulerBuilderConfiguration'
+ -[36m2024/04/02 20:58:33,104[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'threadPoolTaskSchedulerBuilder'
+ -[36m2024/04/02 20:58:33,104[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+ -[36m2024/04/02 20:58:33,105[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'threadPoolTaskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+ -[36m2024/04/02 20:58:33,105[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$TaskSchedulerBuilderConfiguration'
+ -[36m2024/04/02 20:58:33,106[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'taskSchedulerBuilder'
+ -[36m2024/04/02 20:58:33,106[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'taskSchedulerBuilder' via factory method to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+ -[36m2024/04/02 20:58:33,106[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration'
+ -[36m2024/04/02 20:58:33,106[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration' via constructor to bean named 'spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties'
+ -[36m2024/04/02 20:58:33,106[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'simpleAsyncTaskSchedulerBuilder'
+ -[36m2024/04/02 20:58:33,107[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration'
+ -[36m2024/04/02 20:58:33,107[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration'
+ -[36m2024/04/02 20:58:33,108[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'transactionManager'
+ -[36m2024/04/02 20:58:33,108[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'transactionManager' via factory method to bean named 'environment'
+ -[36m2024/04/02 20:58:33,108[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'transactionManager' via factory method to bean named 'dataSource'
+ -[36m2024/04/02 20:58:33,111[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration'
+ -[36m2024/04/02 20:58:33,111[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration'
+ -[36m2024/04/02 20:58:33,111[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration'
+ -[36m2024/04/02 20:58:33,111[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration'
+ -[36m2024/04/02 20:58:33,111[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'transactionTemplate'
+ -[36m2024/04/02 20:58:33,112[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'transactionTemplate' via factory method to bean named 'transactionManager'
+ -[36m2024/04/02 20:58:33,112[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration'
+ -[36m2024/04/02 20:58:33,113[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestClientAutoConfiguration'
+ -[36m2024/04/02 20:58:33,113[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'httpMessageConvertersRestClientCustomizer'
+ -[36m2024/04/02 20:58:33,114[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'restClientSsl'
+ -[36m2024/04/02 20:58:33,114[m [34m[DEBUG][m [org.springframework.beans.factory.support.ConstructorResolver] [33m[main][m- Autowiring by type from bean name 'restClientSsl' via factory method to bean named 'sslBundleRegistry'
+ -[36m2024/04/02 20:58:33,114[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'restClientBuilderConfigurer'
+ -[36m2024/04/02 20:58:33,114[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration'
+ -[36m2024/04/02 20:58:33,114[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration'
+ -[36m2024/04/02 20:58:33,115[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'multipartResolver'
+ -[36m2024/04/02 20:58:33,115[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'loginCheck'
+ -[36m2024/04/02 20:58:33,116[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'categoryService'
+ -[36m2024/04/02 20:58:33,117[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'postSearchService'
+ -[36m2024/04/02 20:58:33,118[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'postService'
+ -[36m2024/04/02 20:58:33,118[m [34m[DEBUG][m [org.springframework.beans.factory.support.DefaultSingletonBeanRegistry] [33m[main][m- Creating shared instance of singleton bean 'userService'
+ -[36m2024/04/02 20:58:33,123[m [34m[DEBUG][m [org.springframework.jmx.export.MBeanExporter] [33m[main][m- Registering beans for JMX exposure on startup
+ -[36m2024/04/02 20:58:33,123[m [34m[DEBUG][m [org.springframework.jmx.export.MBeanExporter] [33m[main][m- Auto-detecting user-defined JMX MBeans
+ -[36m2024/04/02 20:58:33,124[m [34m[DEBUG][m [org.springframework.jmx.export.MBeanExporter] [33m[main][m- Bean with name 'dataSource' has been autodetected for JMX exposure
+ -[36m2024/04/02 20:58:33,126[m [34m[DEBUG][m [org.springframework.jmx.export.MBeanExporter] [33m[main][m- Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+ -[36m2024/04/02 20:58:33,128[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[main][m- Starting beans in phase -2147483647
+ -[36m2024/04/02 20:58:33,128[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[main][m- Successfully started bean 'springBootLoggingLifecycle'
+ -[36m2024/04/02 20:58:33,128[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[main][m- Starting beans in phase 0
+ -[36m2024/04/02 20:58:33,128[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[main][m- Starting beans in phase 2147481599
+ -[36m2024/04/02 20:58:33,128[m [32m[INFO ][m [org.apache.juli.logging.DirectJDKLog] [33m[main][m- Starting ProtocolHandler ["http-nio-8080"]
+ -[36m2024/04/02 20:58:33,137[m [32m[INFO ][m [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [33m[main][m- Tomcat started on port 8080 (http) with context path ''
+ -[36m2024/04/02 20:58:33,137[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[main][m- Successfully started bean 'webServerStartStop'
+ -[36m2024/04/02 20:58:33,137[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[main][m- Starting beans in phase 2147482623
+ -[36m2024/04/02 20:58:33,137[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[main][m- Successfully started bean 'webServerGracefulShutdown'
+ -[36m2024/04/02 20:58:33,137[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[main][m- Starting beans in phase 2147483647
+ -[36m2024/04/02 20:58:33,143[m [34m[DEBUG][m [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] [33m[main][m- 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration matched:
+      - @ConditionalOnClass found required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ApplicationAvailabilityAutoConfiguration#applicationAvailability matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.availability.ApplicationAvailability; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) matched (OnPropertyCondition)
+
+   DataSourceInitializationConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.sql.init.SqlDataSourceScriptDatabaseInitializer,org.springframework.boot.autoconfigure.sql.init.SqlR2dbcScriptDatabaseInitializer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceJmxConfiguration matched:
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   DataSourceJmxConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.HikariPoolDataSourceMetadataProviderConfiguration matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.TransactionManager' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration#transactionManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DispatcherServletAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.servlet.ServletRegistration' (OnClassCondition)
+      - Default DispatcherServlet did not find dispatcher servlet beans (DispatcherServletAutoConfiguration.DefaultDispatcherServletCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.servlet.ServletRegistration' (OnClassCondition)
+      - DispatcherServlet Registration did not find servlet registration bean (DispatcherServletAutoConfiguration.DispatcherServletRegistrationCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration#dispatcherServletRegistration matched:
+      - @ConditionalOnBean (names: dispatcherServlet types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration matched:
+      - @ConditionalOnWebApplication (required) found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnWarDeployment the application is not deployed as a WAR file. (OnWarDeploymentCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.TomcatWebServerFactoryCustomizerConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+
+   ErrorMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration#conventionErrorViewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet'; @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.servlet.error.ErrorViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration matched:
+      - @ConditionalOnProperty (server.error.whitelabel.enabled) matched (OnPropertyCondition)
+      - ErrorTemplate Missing did not find error template view (ErrorMvcAutoConfiguration.ErrorTemplateMissingCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#beanNameViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration#defaultErrorView matched:
+      - @ConditionalOnMissingBean (names: error; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpEncodingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (server.servlet.encoding.enabled) matched (OnPropertyCondition)
+
+   HttpEncodingAutoConfiguration#characterEncodingFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.CharacterEncodingFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition.ReactiveWebApplication did not find reactive web application classes (HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition)
+
+   HttpMessageConvertersAutoConfiguration#messageConverters matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.http.HttpMessageConverters; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.StringHttpMessageConverter' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration#stringHttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.StringHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration#jacksonObjectMapperBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.Jackson2ObjectMapperBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.module.paramnames.ParameterNamesModule' (OnClassCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration#parameterNamesModule matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.module.paramnames.ParameterNamesModule; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+      - @ConditionalOnProperty (spring.mvc.converters.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found bean 'objectMapper' (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration#mappingJackson2HttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.MappingJackson2HttpMessageConverter ignored: org.springframework.hateoas.server.mvc.TypeConstrainedMappingJackson2HttpMessageConverter,org.springframework.data.rest.webmvc.alps.AlpsJsonHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JdbcClientAutoConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate; SearchStrategy: all) found a single bean 'namedParameterJdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.simple.JdbcClient; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JdbcTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   JdbcTemplateConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jdbc.core.JdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+      - @ConditionalOnProperty (spring.jmx.enabled=true) matched (OnPropertyCondition)
+
+   JmxAutoConfiguration#mbeanExporter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.MBeanExporter; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#mbeanServer matched:
+      - @ConditionalOnMissingBean (types: javax.management.MBeanServer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JmxAutoConfiguration#objectNamingStrategy matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jmx.export.naming.ObjectNamingStrategy; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   LettuceConnectionConfiguration matched:
+      - @ConditionalOnClass found required class 'io.lettuce.core.RedisClient' (OnClassCondition)
+      - @ConditionalOnProperty (spring.data.redis.client-type=lettuce) matched (OnPropertyCondition)
+
+   LettuceConnectionConfiguration#lettuceClientResources matched:
+      - @ConditionalOnMissingBean (types: io.lettuce.core.resource.ClientResources; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LifecycleAutoConfiguration#defaultLifecycleProcessor matched:
+      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.multipart.support.StandardServletMultipartResolver', 'jakarta.servlet.MultipartConfigElement' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (spring.servlet.multipart.enabled) matched (OnPropertyCondition)
+
+   MultipartAutoConfiguration#multipartConfigElement matched:
+      - @ConditionalOnMissingBean (types: jakarta.servlet.MultipartConfigElement; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MultipartAutoConfiguration#multipartResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MybatisAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.ibatis.session.SqlSessionFactory', 'org.mybatis.spring.SqlSessionFactoryBean' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   MybatisAutoConfiguration#sqlSessionTemplate matched:
+      - @ConditionalOnMissingBean (types: org.mybatis.spring.SqlSessionTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MybatisLanguageDriverAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.apache.ibatis.scripting.LanguageDriver' (OnClassCondition)
+
+   NamedParameterJdbcTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.JdbcTemplate; SearchStrategy: all) found a single bean 'jdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NettyAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.netty.util.NettyRuntime' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor' (OnClassCondition)
+
+   PersistenceExceptionTranslationAutoConfiguration#persistenceExceptionTranslationPostProcessor matched:
+      - @ConditionalOnProperty (spring.dao.exceptiontranslation.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ReactorAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'reactor.core.publisher.Hooks' (OnClassCondition)
+
+   RedisAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.redis.core.RedisOperations' (OnClassCondition)
+
+   RedisAutoConfiguration#redisConnectionDetails matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.data.redis.RedisConnectionDetails; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RedisAutoConfiguration#redisTemplate matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.data.redis.connection.RedisConnectionFactory; SearchStrategy: all) found a single bean 'redisConnectionFactory'; @ConditionalOnMissingBean (names: redisTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RedisAutoConfiguration#stringRedisTemplate matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.data.redis.connection.RedisConnectionFactory; SearchStrategy: all) found a single bean 'redisConnectionFactory'; @ConditionalOnMissingBean (types: org.springframework.data.redis.core.StringRedisTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RedisCacheConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.redis.connection.RedisConnectionFactory' (OnClassCondition)
+      - Cache org.springframework.boot.autoconfigure.cache.RedisCacheConfiguration REDIS cache type (CacheCondition)
+
+   RedisReactiveAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.data.redis.connection.ReactiveRedisConnectionFactory', 'org.springframework.data.redis.core.ReactiveRedisTemplate', 'reactor.core.publisher.Flux' (OnClassCondition)
+
+   RestClientAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.client.RestClient' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on NotReactiveWebApplicationCondition.ReactiveWebApplication did not find reactive web application classes (NotReactiveWebApplicationCondition)
+
+   RestClientAutoConfiguration#httpMessageConvertersRestClientCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.client.HttpMessageConvertersRestClientCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestClientAutoConfiguration#restClientBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.client.RestClient$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestClientAutoConfiguration#restClientBuilderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.client.RestClientBuilderConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestClientAutoConfiguration#restClientSsl matched:
+      - @ConditionalOnBean (types: org.springframework.boot.ssl.SslBundles; SearchStrategy: all) found bean 'sslBundleRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.client.RestClientSsl; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.client.RestTemplate' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on NotReactiveWebApplicationCondition.ReactiveWebApplication did not find reactive web application classes (NotReactiveWebApplicationCondition)
+
+   RestTemplateAutoConfiguration#restTemplateBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.client.RestTemplateBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ServletWebServerFactoryAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.servlet.ServletRequest' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ServletWebServerFactoryAutoConfiguration#tomcatServletWebServerFactoryCustomizer matched:
+      - @ConditionalOnClass found required class 'org.apache.catalina.startup.Tomcat' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedTomcat matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.apache.catalina.startup.Tomcat', 'org.apache.coyote.UpgradeProtocol' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.server.ServletWebServerFactory; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.application.admin.enabled=true) matched (OnPropertyCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration#springApplicationAdminRegistrar matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.data.web.PageableHandlerMethodArgumentResolver', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.PageableHandlerMethodArgumentResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration#pageableCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.PageableHandlerMethodArgumentResolverCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration#sortCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.SortHandlerMethodArgumentResolverCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SqlInitializationAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.sql.init.enabled) matched (OnPropertyCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on SqlInitializationAutoConfiguration.SqlInitializationModeCondition.ModeIsNever @ConditionalOnProperty (spring.sql.init.mode=never) did not find property 'mode' (SqlInitializationAutoConfiguration.SqlInitializationModeCondition)
+
+   SslAutoConfiguration#sslBundleRegistry matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.ssl.SslBundleRegistry,org.springframework.boot.ssl.SslBundles; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorBuilderConfiguration#taskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration matched:
+      - @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.ThreadPoolTaskExecutorBuilderConfiguration#threadPoolTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskExecutorBuilder,org.springframework.boot.task.ThreadPoolTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskSchedulingConfigurations.TaskSchedulerBuilderConfiguration#taskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingConfigurations.ThreadPoolTaskSchedulerBuilderConfiguration#threadPoolTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskSchedulerBuilder,org.springframework.boot.task.ThreadPoolTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found bean 'transactionManager'; @ConditionalOnMissingBean (types: org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) found a single bean 'transactionManager' (OnBeanCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration#transactionTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.support.TransactionOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionManagerCustomizationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionManagerCustomizationAutoConfiguration#platformTransactionManagerCustomizers matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizers; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#flashMapManager matched:
+      - @ConditionalOnMissingBean (names: flashMapManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#localeResolver matched:
+      - @ConditionalOnMissingBean (names: localeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#themeResolver matched:
+      - @ConditionalOnMissingBean (names: themeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'beanNameViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSocketServletAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'jakarta.websocket.server.ServerContainer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.apache.catalina.startup.Tomcat', 'org.apache.tomcat.websocket.server.WsSci' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration#websocketServletWebServerCustomizer matched:
+      - @ConditionalOnMissingBean (names: websocketServletWebServerCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   ActiveMQAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.jms.ConnectionFactory' (OnClassCondition)
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   AopAutoConfiguration.ClassProxyingConfiguration:
+      Did not match:
+         - @ConditionalOnMissingClass found unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   ArtemisAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.jms.ConnectionFactory' (OnClassCondition)
+
+   BatchAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.batch.core.launch.JobLauncher' (OnClassCondition)
+
+   Cache2kCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.cache2k.Cache2kBuilder' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: cacheResolver types: org.springframework.cache.CacheManager; SearchStrategy: all) found beans of type 'org.springframework.cache.CacheManager' redisCacheManager (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerEntityManagerFactoryDependsOnPostProcessor:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.github.benmanes.caffeine.cache.Caffeine' (OnClassCondition)
+
+   CassandraAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   CassandraReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.cassandra.ReactiveSession' (OnClassCondition)
+
+   CassandraRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.datastax.oss.driver.api.core.CqlSession' (OnClassCondition)
+
+   ClientHttpConnectorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CodecsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CouchbaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   CouchbaseReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   CouchbaseRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Bucket' (OnClassCondition)
+
+   DataSourceAutoConfiguration.EmbeddedDatabaseConfiguration:
+      Did not match:
+         - EmbeddedDataSource found supported pooled data source (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) found beans of type 'javax.sql.DataSource' dataSource (OnBeanCondition)
+      Matched:
+         - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+
+   DataSourceCheckpointRestoreConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.crac.Resource' (OnClassCondition)
+
+   DataSourceConfiguration.Dbcp2:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourceConfiguration.Generic:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (OnPropertyCondition)
+
+   DataSourceConfiguration.OracleUcp:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSourceImpl', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourceConfiguration.Tomcat:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceJmxConfiguration.TomcatDataSourceJmxConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSourceProxy' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.CommonsDbcp2PoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.OracleUcpPoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSource', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.TomcatDataSourcePoolMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DispatcherServletAutoConfiguration.DispatcherServletConfiguration#multipartResolver:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.multipart.MultipartResolver; SearchStrategy: all) did not find any beans of type org.springframework.web.multipart.MultipartResolver (OnBeanCondition)
+
+   ElasticsearchClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'co.elastic.clients.elasticsearch.ElasticsearchClient' (OnClassCondition)
+
+   ElasticsearchDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.client.elc.ElasticsearchTemplate' (OnClassCondition)
+
+   ElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.repository.ElasticsearchRepository' (OnClassCondition)
+
+   ElasticsearchRestClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.elasticsearch.client.RestClientBuilder' (OnClassCondition)
+
+   EmbeddedLdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.unboundid.ldap.listener.InMemoryDirectoryServer' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.JettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.ee10.webapp.WebAppContext' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.NettyWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'reactor.netty.http.server.HttpServer' (OnClassCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.TomcatWebServerFactoryCustomizerConfiguration#tomcatVirtualThreadsProtocolHandlerCustomizer:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   EmbeddedWebServerFactoryCustomizerAutoConfiguration.UndertowWebServerFactoryCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   ErrorWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'freemarker.template.Configuration' (OnClassCondition)
+
+   GenericCacheConfiguration:
+      Did not match:
+         - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration unknown cache type (CacheCondition)
+
+   GraphQlAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlQueryByExampleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlQuerydslAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.querydsl.core.Query' (OnClassCondition)
+
+   GraphQlRSocketAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlReactiveQueryByExampleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlReactiveQuerydslAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.querydsl.core.Query' (OnClassCondition)
+
+   GraphQlWebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebFluxSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GraphQlWebMvcSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   GsonHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   H2ConsoleAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.h2.server.web.JakartaWebServlet' (OnClassCondition)
+
+   HazelcastAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HazelcastJpaDependencyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HibernateJpaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.persistence.EntityManager' (OnClassCondition)
+
+   HttpHandlerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.DispatcherHandler' (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.hateoas.EntityModel' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.embedded.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   InfluxDbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.influxdb.InfluxDB' (OnClassCondition)
+
+   IntegrationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.integration.config.EnableIntegration' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.cache.Caching' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration#jacksonObjectMapper:
+      Did not match:
+         - @ConditionalOnMissingBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found beans of type 'com.fasterxml.jackson.databind.ObjectMapper' objectMapper (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2XmlHttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JdbcRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jdbc.repository.config.AbstractJdbcConfiguration' (OnClassCondition)
+
+   JedisConnectionConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.apache.commons.pool2.impl.GenericObjectPool', 'redis.clients.jedis.Jedis' (OnClassCondition)
+
+   JerseyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.glassfish.jersey.server.spring.SpringComponentProvider' (OnClassCondition)
+
+   JmsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.jms.Message' (OnClassCondition)
+
+   JndiConnectionFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.jms.core.JmsTemplate' (OnClassCondition)
+
+   JndiDataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+
+   JooqAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.jooq.DSLContext' (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+
+   JsonbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.json.bind.Jsonb' (OnClassCondition)
+
+   JsonbHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.json.bind.Jsonb' (OnClassCondition)
+
+   JtaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.transaction.Transaction' (OnClassCondition)
+
+   KafkaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.kafka.core.KafkaTemplate' (OnClassCondition)
+
+   LdapAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ldap.core.ContextSource' (OnClassCondition)
+
+   LdapRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.ldap.repository.LdapRepository' (OnClassCondition)
+
+   LettuceConnectionConfiguration#redisConnectionFactory:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.data.redis.connection.RedisConnectionFactory; SearchStrategy: all) found beans of type 'org.springframework.data.redis.connection.RedisConnectionFactory' redisConnectionFactory (OnBeanCondition)
+
+   LettuceConnectionConfiguration#redisConnectionFactoryVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.data.redis.connection.RedisConnectionFactory; SearchStrategy: all) found beans of type 'org.springframework.data.redis.connection.RedisConnectionFactory' redisConnectionFactory (OnBeanCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'liquibase.change.DatabaseChange' (OnClassCondition)
+
+   MailSenderAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.activation.MimeType' (OnClassCondition)
+
+   MailSenderValidatorAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.mail.test-connection) did not find property 'test-connection' (OnPropertyCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MongoAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MongoDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.reactivestreams.client.MongoClient' (OnClassCondition)
+
+   MongoRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.mongodb.client.MongoClient' (OnClassCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+   MybatisAutoConfiguration#sqlSessionFactory:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.apache.ibatis.session.SqlSessionFactory; SearchStrategy: all) found beans of type 'org.apache.ibatis.session.SqlSessionFactory' sqlSessionFactory (OnBeanCondition)
+
+   MybatisAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.mybatis.spring.mapper.MapperFactoryBean,org.mybatis.spring.mapper.MapperScannerConfigurer; SearchStrategy: all) found beans of type 'org.mybatis.spring.mapper.MapperScannerConfigurer' dev.project.boardserver.config.MySQLConfig#MapperScannerRegistrar#0 (OnBeanCondition)
+
+   MybatisLanguageDriverAutoConfiguration.FreeMarkerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.mybatis.scripting.freemarker.FreeMarkerLanguageDriver', 'org.mybatis.scripting.freemarker.FreeMarkerLanguageDriverConfig' (OnClassCondition)
+
+   MybatisLanguageDriverAutoConfiguration.LegacyFreeMarkerConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.mybatis.scripting.freemarker.FreeMarkerLanguageDriver' (OnClassCondition)
+
+   MybatisLanguageDriverAutoConfiguration.LegacyVelocityConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.mybatis.scripting.velocity.Driver' (OnClassCondition)
+
+   MybatisLanguageDriverAutoConfiguration.ThymeleafConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.mybatis.scripting.thymeleaf.ThymeleafLanguageDriver' (OnClassCondition)
+
+   MybatisLanguageDriverAutoConfiguration.VelocityConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.mybatis.scripting.velocity.VelocityLanguageDriver', 'org.mybatis.scripting.velocity.VelocityLanguageDriverConfig' (OnClassCondition)
+
+   Neo4jAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jReactiveDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jReactiveRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   Neo4jRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.neo4j.driver.Driver' (OnClassCondition)
+
+   NoOpCacheConfiguration:
+      Did not match:
+         - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration unknown cache type (CacheCondition)
+
+   OAuth2AuthorizationServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.authorization.OAuth2Authorization' (OnClassCondition)
+
+   OAuth2AuthorizationServerJwtAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.authorization.OAuth2Authorization' (OnClassCondition)
+
+   OAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+   OAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.resource.authentication.BearerTokenAuthenticationToken' (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   PulsarAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.pulsar.client.api.PulsarClient' (OnClassCondition)
+
+   PulsarReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.pulsar.client.api.PulsarClient' (OnClassCondition)
+
+   QuartzAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.quartz.Scheduler' (OnClassCondition)
+
+   R2dbcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+   R2dbcDataAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.r2dbc.core.R2dbcEntityTemplate' (OnClassCondition)
+
+   R2dbcInitializationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.r2dbc.spi.ConnectionFactory', 'org.springframework.r2dbc.connection.init.DatabasePopulator' (OnClassCondition)
+
+   R2dbcRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.r2dbc.spi.ConnectionFactory' (OnClassCondition)
+
+   R2dbcTransactionManagerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.r2dbc.connection.R2dbcTransactionManager' (OnClassCondition)
+
+   RSocketGraphQlClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'graphql.GraphQL' (OnClassCondition)
+
+   RSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+   RSocketRequesterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+   RSocketSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.rsocket.core.SecuritySocketAcceptorInterceptor' (OnClassCondition)
+
+   RSocketServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.core.RSocketServer' (OnClassCondition)
+
+   RSocketStrategiesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.rsocket.RSocket' (OnClassCondition)
+
+   RabbitAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.rabbitmq.client.Channel' (OnClassCondition)
+
+   ReactiveElasticsearchClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'co.elastic.clients.transport.ElasticsearchTransport' (OnClassCondition)
+
+   ReactiveElasticsearchRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.elasticsearch.client.elc.ReactiveElasticsearchClient' (OnClassCondition)
+
+   ReactiveMultipartAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   ReactiveOAuth2ClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity' (OnClassCondition)
+
+   ReactiveOAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity' (OnClassCondition)
+
+   ReactiveSecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity' (OnClassCondition)
+
+   ReactiveUserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.ReactiveAuthenticationManager' (OnClassCondition)
+
+   ReactiveWebServerFactoryAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   RedisReactiveAutoConfiguration#reactiveRedisTemplate:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.data.redis.connection.ReactiveRedisConnectionFactory; SearchStrategy: all) did not find any beans of type org.springframework.data.redis.connection.ReactiveRedisConnectionFactory (OnBeanCondition)
+
+   RedisReactiveAutoConfiguration#reactiveStringRedisTemplate:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.data.redis.connection.ReactiveRedisConnectionFactory; SearchStrategy: all) did not find any beans of type org.springframework.data.redis.connection.ReactiveRedisConnectionFactory (OnBeanCondition)
+
+   RedisRepositoriesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.data.redis.repositories.enabled=true) found different value in property 'enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.data.redis.repository.configuration.EnableRedisRepositories' (OnClassCondition)
+
+   RepositoryRestMvcAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration' (OnClassCondition)
+
+   Saml2RelyingPartyAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (OnClassCondition)
+
+   SecurityAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityFilterAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+
+   SendGridAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.sendgrid.SendGrid' (OnClassCondition)
+
+   ServletWebServerFactoryAutoConfiguration.ForwardedHeaderFilterConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (server.forward-headers-strategy=framework) did not find property 'server.forward-headers-strategy' (OnPropertyCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedJetty:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'org.eclipse.jetty.server.Server', 'org.eclipse.jetty.util.Loader', 'org.eclipse.jetty.ee10.webapp.WebAppContext' (OnClassCondition)
+
+   ServletWebServerFactoryConfiguration.EmbeddedUndertow:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.undertow.Undertow', 'org.xnio.SslClientAuthMode' (OnClassCondition)
+
+   SessionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.session.Session' (OnClassCondition)
+
+   SimpleCacheConfiguration:
+      Did not match:
+         - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration unknown cache type (CacheCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder' simpleAsyncTaskExecutorBuilder (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutorVirtualThreads:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   TaskSchedulingAutoConfiguration#scheduledBeanLazyInitializationExcludeFilter:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.context.annotation.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder' simpleAsyncTaskSchedulerBuilder (OnBeanCondition)
+
+   TaskSchedulingConfigurations.TaskSchedulerConfiguration:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.context.annotation.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.context.annotation.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   ThymeleafAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.thymeleaf.spring6.SpringTemplateEngine' (OnClassCondition)
+
+   TransactionAutoConfiguration#transactionalOperator:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.ReactiveTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.AspectJTransactionManagementConfiguration:
+      Did not match:
+         - @ConditionalOnBean did not find required type 'org.springframework.transaction.aspectj.AbstractTransactionAspect' (OnBeanCondition)
+         - @ConditionalOnBean (types: org.springframework.transaction.aspectj.AbstractTransactionAspect; SearchStrategy: all) did not find any beans of type org.springframework.transaction.aspectj.AbstractTransactionAspect (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+   ValidationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.validation.executable.ExecutableValidator' (OnClassCondition)
+
+   WebClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   WebFluxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.hiddenmethod.filter.enabled) did not find property 'enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.ProblemDetailsErrorHandlingConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.problemdetails.enabled=true) did not find property 'enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.ResourceChainCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnEnabledResourceChain did not find class org.webjars.WebJarAssetLocator (OnEnabledResourceChainCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.BeanNameViewResolver; SearchStrategy: all) found beans of type 'org.springframework.web.servlet.view.BeanNameViewResolver' beanNameViewResolver (OnBeanCondition)
+
+   WebServiceTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.client.core.WebServiceTemplate' (OnClassCondition)
+
+   WebServicesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.ws.transport.http.MessageDispatcherServlet' (OnClassCondition)
+
+   WebSessionIdResolverAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   WebSocketMessagingAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer' (OnClassCondition)
+
+   WebSocketReactiveAutoConfiguration:
+      Did not match:
+         - @ConditionalOnWebApplication did not find reactive web application classes (OnWebApplicationCondition)
+
+   WebSocketServletAutoConfiguration.JettyWebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.eclipse.jetty.ee10.websocket.jakarta.server.config.JakartaWebSocketServletContainerInitializer' (OnClassCondition)
+
+   WebSocketServletAutoConfiguration.UndertowWebSocketConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.undertow.websockets.jsr.Bootstrap' (OnClassCondition)
+
+   XADataSourceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.transaction.TransactionManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+ -[36m2024/04/02 20:58:33,145[m [32m[INFO ][m [org.springframework.boot.StartupInfoLogger] [33m[main][m- Started BoardserverApplication in 1.417 seconds (process running for 1.757)
+ -[36m2024/04/02 20:58:33,145[m [34m[DEBUG][m [org.springframework.boot.availability.ApplicationAvailabilityBean] [33m[main][m- Application availability state LivenessState changed to CORRECT
+ -[36m2024/04/02 20:58:33,146[m [34m[DEBUG][m [org.springframework.boot.availability.ApplicationAvailabilityBean] [33m[main][m- Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+ -[36m2024/04/02 21:13:18,117[m [32m[INFO ][m [org.apache.juli.logging.DirectJDKLog] [33m[http-nio-8080-exec-1][m- Initializing Spring DispatcherServlet 'dispatcherServlet'
+ -[36m2024/04/02 21:13:18,118[m [32m[INFO ][m [org.springframework.web.servlet.FrameworkServlet] [33m[http-nio-8080-exec-1][m- Initializing Servlet 'dispatcherServlet'
+ -[36m2024/04/02 21:13:18,118[m [34m[DEBUG][m [org.springframework.web.servlet.DispatcherServlet] [33m[http-nio-8080-exec-1][m- Detected StandardServletMultipartResolver
+ -[36m2024/04/02 21:13:18,118[m [34m[DEBUG][m [org.springframework.web.servlet.DispatcherServlet] [33m[http-nio-8080-exec-1][m- Detected AcceptHeaderLocaleResolver
+ -[36m2024/04/02 21:13:18,118[m [34m[DEBUG][m [org.springframework.web.servlet.DispatcherServlet] [33m[http-nio-8080-exec-1][m- Detected FixedThemeResolver
+ -[36m2024/04/02 21:13:18,125[m [34m[DEBUG][m [org.springframework.web.servlet.DispatcherServlet] [33m[http-nio-8080-exec-1][m- Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@122dcfe4
+ -[36m2024/04/02 21:13:18,125[m [34m[DEBUG][m [org.springframework.web.servlet.DispatcherServlet] [33m[http-nio-8080-exec-1][m- Detected org.springframework.web.servlet.support.SessionFlashMapManager@3fcd7cff
+ -[36m2024/04/02 21:13:18,125[m [34m[DEBUG][m [org.springframework.web.servlet.FrameworkServlet] [33m[http-nio-8080-exec-1][m- enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+ -[36m2024/04/02 21:13:18,125[m [32m[INFO ][m [org.springframework.web.servlet.FrameworkServlet] [33m[http-nio-8080-exec-1][m- Completed initialization in 7 ms
+ -[36m2024/04/02 21:13:18,132[m [34m[DEBUG][m [org.springframework.core.log.LogFormatUtils] [33m[http-nio-8080-exec-1][m- POST "/users/sign-in", parameters={}
+ -[36m2024/04/02 21:13:18,147[m [34m[DEBUG][m [org.springframework.web.servlet.handler.AbstractHandlerMapping] [33m[http-nio-8080-exec-1][m- Mapped to dev.project.boardserver.controller.UserController#login(UserLoginRequest, HttpSession)
+ -[36m2024/04/02 21:13:18,180[m [34m[DEBUG][m [org.springframework.core.log.LogFormatUtils] [33m[http-nio-8080-exec-1][m- Read "application/json;charset=UTF-8" to [dev.project.boardserver.dto.request.UserLoginRequest@762d85eb]
+ -[36m2024/04/02 21:13:18,201[m [34m[DEBUG][m [org.springframework.jdbc.datasource.DataSourceUtils] [33m[http-nio-8080-exec-1][m- Fetching JDBC Connection from DataSource
+ -[36m2024/04/02 21:13:18,203[m [32m[INFO ][m [com.zaxxer.hikari.HikariDataSource] [33m[http-nio-8080-exec-1][m- HikariPool-1 - Starting...
+ -[36m2024/04/02 21:13:18,386[m [32m[INFO ][m [com.zaxxer.hikari.pool.HikariPool] [33m[http-nio-8080-exec-1][m- HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d6e7bf
+ -[36m2024/04/02 21:13:18,387[m [32m[INFO ][m [com.zaxxer.hikari.HikariDataSource] [33m[http-nio-8080-exec-1][m- HikariPool-1 - Start completed.
+ -[36m2024/04/02 21:13:18,426[m [34m[DEBUG][m [org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor] [33m[http-nio-8080-exec-1][m- Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ -[36m2024/04/02 21:13:18,427[m [34m[DEBUG][m [org.springframework.core.log.LogFormatUtils] [33m[http-nio-8080-exec-1][m- Writing [200 OK]
+ -[36m2024/04/02 21:13:18,432[m [34m[DEBUG][m [org.springframework.web.servlet.FrameworkServlet] [33m[http-nio-8080-exec-1][m- Completed 200 OK
+ -[36m2024/04/02 21:19:13,244[m [33m[WARN ][m [com.zaxxer.hikari.pool.HikariPool$HouseKeeper] [33m[HikariPool-1 housekeeper][m- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m24s729ms).
+ -[36m2024/04/02 21:19:28,439[m [34m[DEBUG][m [org.springframework.core.log.LogFormatUtils] [33m[http-nio-8080-exec-3][m- POST "/", parameters={}
+ -[36m2024/04/02 21:19:28,446[m [34m[DEBUG][m [org.springframework.web.servlet.handler.AbstractHandlerMapping] [33m[http-nio-8080-exec-3][m- Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+ -[36m2024/04/02 21:19:28,447[m [34m[DEBUG][m [org.springframework.web.servlet.resource.ResourceHttpRequestHandler] [33m[http-nio-8080-exec-3][m- Resource not found
+ -[36m2024/04/02 21:19:28,452[m [34m[DEBUG][m [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [33m[http-nio-8080-exec-3][m- Using @ExceptionHandler dev.project.boardserver.exception.hadler.CustomExceptionHandler#defaultException(Exception)
+ -[36m2024/04/02 21:19:28,464[m [34m[DEBUG][m [org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor] [33m[http-nio-8080-exec-3][m- Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+ -[36m2024/04/02 21:19:28,465[m [34m[DEBUG][m [org.springframework.core.log.LogFormatUtils] [33m[http-nio-8080-exec-3][m- Writing [dev.project.boardserver.dto.response.CommonResponse@3289ff49]
+ -[36m2024/04/02 21:19:28,466[m [34m[DEBUG][m [org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver] [33m[http-nio-8080-exec-3][m- Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+ -[36m2024/04/02 21:19:28,466[m [34m[DEBUG][m [org.springframework.web.servlet.FrameworkServlet] [33m[http-nio-8080-exec-3][m- Completed 200 OK
+ -[36m2024/04/02 21:23:05,524[m [34m[DEBUG][m [org.springframework.boot.availability.ApplicationAvailabilityBean] [33m[SpringApplicationShutdownHook][m- Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+ -[36m2024/04/02 21:23:05,525[m [34m[DEBUG][m [org.springframework.context.support.AbstractApplicationContext] [33m[SpringApplicationShutdownHook][m- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7e985ce9, started on Tue Apr 02 20:58:31 KST 2024
+ -[36m2024/04/02 21:23:05,553[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[SpringApplicationShutdownHook][m- Stopping beans in phase 2147483647
+ -[36m2024/04/02 21:23:05,553[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[SpringApplicationShutdownHook][m- Stopping beans in phase 2147482623
+ -[36m2024/04/02 21:23:05,555[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[SpringApplicationShutdownHook][m- Bean 'webServerGracefulShutdown' completed its stop procedure
+ -[36m2024/04/02 21:23:05,555[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[SpringApplicationShutdownHook][m- Stopping beans in phase 2147481599
+ -[36m2024/04/02 21:23:05,559[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[SpringApplicationShutdownHook][m- Bean 'webServerStartStop' completed its stop procedure
+ -[36m2024/04/02 21:23:05,559[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[SpringApplicationShutdownHook][m- Stopping beans in phase 0
+ -[36m2024/04/02 21:23:05,670[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[SpringApplicationShutdownHook][m- Bean 'redisConnectionFactory' completed its stop procedure
+ -[36m2024/04/02 21:23:05,670[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup] [33m[SpringApplicationShutdownHook][m- Stopping beans in phase -2147483647
+ -[36m2024/04/02 21:23:05,671[m [34m[DEBUG][m [org.springframework.context.support.DefaultLifecycleProcessor] [33m[SpringApplicationShutdownHook][m- Bean 'springBootLoggingLifecycle' completed its stop procedure
+ -[36m2024/04/02 21:23:05,672[m [34m[DEBUG][m [org.springframework.beans.factory.support.DisposableBeanAdapter] [33m[SpringApplicationShutdownHook][m- Custom destroy method 'shutdown' on bean with name 'lettuceClientResources' completed asynchronously
+ -[36m2024/04/02 21:23:05,672[m [34m[DEBUG][m [org.springframework.jmx.export.MBeanExporter] [33m[SpringApplicationShutdownHook][m- Unregistering JMX-exposed beans on shutdown
+ -[36m2024/04/02 21:23:05,672[m [34m[DEBUG][m [org.springframework.jmx.support.MBeanRegistrationSupport] [33m[SpringApplicationShutdownHook][m- Unregistering JMX-exposed beans
+ -[36m2024/04/02 21:23:05,673[m [34m[DEBUG][m [org.springframework.scheduling.concurrent.ExecutorConfigurationSupport] [33m[SpringApplicationShutdownHook][m- Shutting down ExecutorService 'applicationTaskExecutor'
+ -[36m2024/04/02 21:23:05,673[m [32m[INFO ][m [com.zaxxer.hikari.HikariDataSource] [33m[SpringApplicationShutdownHook][m- HikariPool-1 - Shutdown initiated...
+ -[36m2024/04/02 21:23:05,684[m [32m[INFO ][m [com.zaxxer.hikari.HikariDataSource] [33m[SpringApplicationShutdownHook][m- HikariPool-1 - Shutdown completed.
  -
